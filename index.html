@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17090d">
+  <title>Entre páginas e sentimentos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=IM+Fell+English:ital@0;1&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio">E.P.S. <span>✦</span></a>
+    <nav>
+      <a href="#livro">O livro</a>
+      <a href="#cartas">Cartas</a>
+      <a href="#poemas">Poemas</a>
+      <button id="purpleNav" class="nav-special">Um lugar seu ♡</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">um pequeno universo escrito à mão</p>
+        <h1>Entre páginas<br>e <em>sentimentos</em></h1>
+        <p class="hero-sub">
+          Há coisas que a voz não consegue dizer.<br>
+          Talvez estas páginas consigam.
+        </p>
+        <a class="outline-button" href="#livro">
+          Começar a leitura <span>↘</span>
+        </a>
+      </div>
+      <div class="hero-note">volume I · escrito com carinho</div>
+      <div class="hero-rose">✿</div>
+    </section>
+
+    <section class="intro section-pad" id="livro">
+      <div class="section-kicker">01 — antes de tudo</div>
+
+      <div class="intro-grid">
+        <div class="book-visual">
+          <div class="book-shadow"></div>
+          <div class="book">
+            <div class="book-cover">
+              <span class="book-ornament">❦</span>
+              <span class="book-small">uma história que ainda respira</span>
+              <strong>O que<br>guardei<br>nas entrelinhas</strong>
+              <span class="book-author">para João Neto</span>
+              <span class="book-ornament bottom">✧</span>
+            </div>
+            <div class="book-pages"></div>
+          </div>
+        </div>
+
+        <div class="intro-copy">
+          <p class="eyebrow">não é só um site</p>
+          <h2>É uma coleção de coisas que eu <em>gostaria que você soubesse.</em></h2>
+          <p>
+            Talvez algumas palavras pareçam simples. Outras talvez sejam difíceis de entender. Mas todas estão aqui por um motivo: eu quis separar um espaço para aquilo que, tantas vezes, ficou preso dentro de mim.
+          </p>
+          <p>
+            Não existe obrigação de sentir o mesmo, nem de responder de uma maneira específica. Só queria que você pudesse conhecer um pouco do que existe por trás destas páginas.
+          </p>
+          <div class="signature">
+            com carinho,
+            <span>alguém que pensou em você</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <span class="quote-mark">“</span>
+      <p>
+        Algumas pessoas acabam virando capítulos inteiros, mesmo quando a história ainda não encontrou seu final.
+      </p>
+      <span class="quote-credit">— uma frase guardada entre páginas</span>
+    </section>
+
+    <section class="letters section-pad" id="cartas">
+      <div class="section-kicker">02 — correspondências</div>
+
+      <div class="section-heading">
+        <p class="eyebrow">abra quando quiser</p>
+        <h2>Cartas que <em>não enviei</em></h2>
+        <p>Escolha um envelope. Cada um guarda palavras diferentes.</p>
+      </div>
+
+      <div class="envelope-grid">
+        <button class="envelope-card" data-letter="letter1">
+          <span class="envelope">
+            <span class="envelope-flap"></span>
+            <span class="seal">J</span>
+          </span>
+          <strong>Para quando sentir saudade</strong>
+          <small>uma carta sobre lembranças</small>
+        </button>
+
+        <button class="envelope-card" data-letter="letter2">
+          <span class="envelope envelope-dark">
+            <span class="envelope-flap"></span>
+            <span class="seal">♡</span>
+          </span>
+          <strong>Sobre aquilo que eu queria dizer</strong>
+          <small>uma carta sem pressa</small>
+        </button>
+
+        <button class="envelope-card" data-letter="letter3">
+          <span class="envelope envelope-light">
+            <span class="envelope-flap"></span>
+            <span class="seal">✧</span>
+          </span>
+          <strong>Se um dia você reler</strong>
+          <small>uma carta para o futuro</small>
+        </button>
+      </div>
+
+      <article class="letter-paper" id="letterPaper" hidden>
+        <button class="close-paper" id="closeLetter">×</button>
+        <div class="paper-top">papel encontrado entre as páginas</div>
+        <h3 id="letterTitle"></h3>
+        <div id="letterText" class="letter-text"></div>
+        <div class="letter-sign">— com carinho</div>
+      </article>
+    </section>
+
+    <section class="poems section-pad" id="poemas">
+      <div class="section-kicker">03 — pequenos escritos</div>
+
+      <div class="section-heading">
+        <p class="eyebrow">poesia para ler devagar</p>
+        <h2>Entre uma linha e <em>outra</em></h2>
+      </div>
+
+      <div class="poem-layout">
+        <article class="poem-card featured-poem">
+          <span class="poem-number">I</span>
+          <p class="poem-label">poema longo</p>
+          <h3>O lugar das coisas bonitas</h3>
+
+          <div class="poem-body">
+            Há lembranças que não fazem barulho,<br>
+            mas permanecem.<br>
+            Ficam no canto de um pensamento,<br>
+            no detalhe de um dia comum,<br>
+            no instante em que uma música começa<br>
+            e, sem pedir licença, alguém vem à memória.<br><br>
+
+            Talvez seja assim que certas pessoas ficam:<br>
+            não ocupando todos os espaços,<br>
+            mas deixando um significado em cada um.<br>
+            E mesmo quando faltam palavras,<br>
+            ainda existe uma vontade sincera<br>
+            de cuidar daquilo que foi bonito.
+          </div>
+
+          <span class="poem-flourish">❦</span>
+        </article>
+
+        <div class="poem-stack">
+          <article class="poem-card">
+            <span class="poem-number">II</span>
+            <p class="poem-label">poema breve</p>
+            <h3>Pequenas permanências</h3>
+            <p>
+              O tempo passa.<br>
+              Algumas coisas mudam.<br>
+              Mas há lembranças<br>
+              que continuam acendendo<br>
+              uma luz baixinha.
+            </p>
+          </article>
+
+          <article class="poem-card">
+            <span class="poem-number">III</span>
+            <p class="poem-label">poema breve</p>
+            <h3>Sem pressa</h3>
+            <p>
+              Não quero apressar<br>
+              o que precisa de tempo.<br>
+              Quero apenas ser sincera<br>
+              enquanto ainda tenho<br>
+              palavras para oferecer.
+            </p>
+          </article>
+
+          <button class="reveal-poem" id="revealPoem">
+            Encontrar um poema escondido ✧
+          </button>
+        </div>
+      </div>
+
+      <article class="hidden-poem" id="hiddenPoem" hidden>
+        <p class="poem-label">uma página que estava dobrada</p>
+        <h3>Se eu pudesse guardar um instante</h3>
+        <p>
+          Eu guardaria um instante simples, desses que talvez passem despercebidos. Não para viver presa nele, mas para lembrar que a beleza também mora nas coisas pequenas. Às vezes, é só isso que a memória precisa: um detalhe para chamar de seu.
+        </p>
+      </article>
+    </section>
+
+    <section class="kiss-section section-pad">
+      <div class="kiss-copy">
+        <div class="section-kicker">04 — marcas de carinho</div>
+        <p class="eyebrow">um detalhe que tem história</p>
+        <h2>Alguns beijos<br>também viram <em>lembrança.</em></h2>
+        <p>
+          Toque nas marcas. Cada uma esconde uma frase — como aqueles pequenos gestos que parecem simples, mas carregam muito mais do que mostram.
+        </p>
+      </div>
+
+      <div class="kiss-board">
+        <div class="kiss-paper-title">fragmentos de afeto <span>✧</span></div>
+
+        <button class="kiss kiss-one" data-message="Tem carinho que a gente reconhece até nos detalhes.">💋</button>
+        <button class="kiss kiss-two" data-message="Eu me lembro do cuidado, não apenas do presente.">💋</button>
+        <button class="kiss kiss-three" data-message="Algumas lembranças merecem ser tratadas com delicadeza.">💋</button>
+        <button class="kiss kiss-four" data-message="Esse cantinho foi feito pensando em você.">💋</button>
+
+        <div class="kiss-message" id="kissMessage">
+          Escolha uma marca de beijo ♡
+        </div>
+
+        <span class="paper-corner">feito à mão, em pensamento</span>
+      </div>
+    </section>
+
+    <section class="memory section-pad">
+      <div class="memory-image">
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            <span>✿</span>
+            <small>um espaço para uma fotografia de vocês</small>
+          </div>
+          <div class="photo-caption">um instante que merece ficar</div>
+        </div>
+      </div>
+
+      <div class="memory-copy">
+        <div class="section-kicker">05 — uma lembrança</div>
+        <p class="eyebrow">há gestos que ficam</p>
+        <h2>O valor estava<br>no <em>cuidado.</em></h2>
+        <p>
+          Tem presente que a gente guarda pelo objeto. E tem presente que a gente guarda pelo que ele representa: o tempo, o esforço, a intenção e o carinho que alguém colocou para fazer aquilo chegar até nós.
+        </p>
+        <p>
+          Às vezes, é justamente esse cuidado que transforma uma coisa simples em uma lembrança tão especial.
+        </p>
+      </div>
+    </section>
+
+    <section class="final-letter section-pad">
+      <div class="final-letter-inner">
+        <span class="wax-seal">J</span>
+        <p class="eyebrow">a última página — por enquanto</p>
+        <h2>Se chegou até aqui…</h2>
+        <p>
+          Obrigada por dedicar alguns minutos a este pequeno universo. Eu não sei o que o futuro guarda, e não quero transformar estas palavras em uma cobrança. Só queria que você soubesse que houve cuidado em cada detalhe e sinceridade em cada linha.
+        </p>
+        <p>
+          Independentemente do que aconteça, espero que a vida seja gentil com você — e que nunca faltem motivos para sorrir.
+        </p>
+        <p class="final-signature">
+          Com carinho,<br>
+          <span>de mim para você.</span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>feito de palavras, lembranças e carinho</span>
+    <span>✦</span>
+    <span>2026</span>
+  </footer>
+
+  <div class="purple-world" id="purpleWorld" aria-hidden="true">
+    <button class="purple-close" id="closePurple">← voltar ao livro</button>
+
+    <div class="purple-stars">✦　✧　　 ✦　　 ˚　✧　　✦</div>
+
+    <div class="purple-content">
+      <p class="eyebrow">um capítulo só seu</p>
+      <h2>Do seu jeito,<br><em>na sua cor.</em></h2>
+
+      <div class="purple-card">
+        <span class="purple-flower">✿</span>
+        <p>
+          Eu sei que o roxo é a sua cor favorita. Então, entre todas as páginas vermelhas deste livro, quis deixar uma especialmente sua.
+        </p>
+        <p>
+          Que este espaço seja como a cor: único, bonito e impossível de confundir com qualquer outro.
+        </p>
+        <p class="purple-ending">
+          Você merece coisas feitas com intenção. ♡
+        </p>
+      </div>
+
+      <div class="purple-bottom">
+        uma pausa lilás no meio destas páginas
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
